@@ -1,0 +1,170 @@
+.background-image01 {
+  background-image: url('hero.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.dv02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right,rgb(16, 85, 195), rgb(62, 168, 185) );
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px; /* Adjust the width as needed */
+  height: 650px; /* Adjust the height as n  eeded */
+  transition: 0.2s linear;
+}
+
+.dv02:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  background: linear-gradient(to right, rgb(62, 168, 185), rgb(16, 85, 195));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 650px;
+}
+
+
+.h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+}
+  
+.f01 {
+  padding: 15px;
+  background-color: transparent;
+  border-color: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  color: white;
+  font-size: 15px;
+  width: 340px; /* Adjust this value as needed */
+  height: 40px;
+  border-radius: 4px;
+}
+
+.f01::placeholder {
+  font-size: 15px;
+  color: rgb(211, 220, 227);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn01,
+LINK {
+  appearance: none;
+  background-color: transparent;
+  border-color: linear-gradient(144deg, #d24ccb, #3a24c5 50%, #00ddeb);
+  border-width: 0;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  z-index: 1;
+  margin: 0;
+  opacity: 2;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 8px;
+  width: 340px;
+}
+
+.btn01:hover,
+LINK:hover {
+  color: white;
+  outline: 0;
+  border-radius: 8px;  
+}
+
+.btn01:active,
+Link:active {
+  outline: 0;
+}
+
+.btn01 span,
+Link span {
+  z-index: -1;
+  position: relative;
+}
+
+.btn01:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #0e0101;
+  background-image: linear-gradient(144deg, rgb(239, 104, 251), rgb(246, 246, 246) 50%, #af40ff);
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  
+  left: 0;
+  position: absolute;
+  opacity: 0.4;
+  color: #0e0101;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .9s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn01:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  
+}
+
+.btn01:after {
+  background-color: linear-gradient(144deg, #5b42f3, #00ddeb 50%, #db63df);
+  z-index: 1;
+}
+
+
+.btn01:hover span,
+.Link:hover span {
+  color: black;
+}
+
+
+@media (min-width: 768px) {
+  .btn01 {
+    font-size: 14px;
+    width: 340px;
+    z-index: 1;
+    color: black;
+}
+}
+
